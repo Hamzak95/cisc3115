@@ -1,0 +1,84 @@
+public class Main {
+    
+    public static void main(String[] args) {
+	// write your code here
+    }
+    public class Pet {
+
+        /* String name = name of pet
+         * String animal = type of animal
+         * int age = age of animal
+         */
+
+        String name;
+        String animal;
+        int age;
+        // Constructor
+        Pet (String name, String type, int age) {
+            this.name = name;
+            this.animal = type;
+            this.age = age;
+        }
+        // Accessors & Mutators
+        public String getName () {
+            return name;
+        }
+        public void setName (String name){
+            this.name = name;
+        }
+        public String getAnimal () {
+            return animal;
+        }
+        public void setAnimal (String animal){
+            this.animal = animal;
+        }
+        public int getAge () {
+            return age;
+        }
+        public void setAge (int age){
+            this.age = age;
+        }
+    }
+    public class Book {
+        private String title;
+        private String author;
+        private String publisher;
+        private int copiesSold;
+
+        // Book Constructors
+        public Book(String title, String author, String publisher ,int copiesSold) {
+            this.title = title;
+            this.author = author;
+            this.publisher = publisher;
+            this.copiesSold = copiesSold;
+        }
+
+        // Accessors & Mutators
+        public String getTitle () {
+            return title;
+        }
+        public void setTitle (String title){
+            this.title = title;
+        }
+        public String getAuthor () {
+            return author;
+        }
+        public void setAuthor (String author){
+            this.author = author;
+        }
+        public String getPublisher(){
+            return publisher;
+        }
+        public void setPublisher (String publisher){
+            this.publisher = publisher;
+        }
+
+        public int getCopiesSold () {
+            return copiesSold;
+        }
+        public void setCopiesSold (int copiesSold){
+            this.copiesSold = copiesSold;
+        }
+
+    }
+}
